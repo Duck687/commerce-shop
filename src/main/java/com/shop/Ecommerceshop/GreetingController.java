@@ -20,6 +20,7 @@ public class GreetingController {
     {
         model.put("Lets","Lets,Go!");
         return "main";
+
     }
 
 }
