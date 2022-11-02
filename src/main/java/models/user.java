@@ -1,17 +1,23 @@
-package Models;
+package models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+
 @Entity
+@Table
 public class user {
+    @Column
     private Integer id_user;
+    @Column
     private String name;
+    @Column
     private String surname;
+    @Column
     private String mail;
+    @Column
     private String password;
+    @Column
     private String phone_number;
+    @Column
     private String role;
 
     public user(Integer id_user, String name, String surname, String mail, String password, String phone_number, String role) {

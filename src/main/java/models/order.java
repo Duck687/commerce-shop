@@ -1,10 +1,8 @@
-package Models;
+package models;
 import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
-import java.sql.Blob;
-import java.text.DecimalFormat;
 
 @Entity
+@Table
 public class order {
     private Integer id_order;
     private Integer id_user;

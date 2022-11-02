@@ -1,7 +1,8 @@
-package Models;
+package models;
 import javax.persistence.*;
 
 @Entity
+@Table
 public class basket {
     private Integer id_basket;
     private Integer id_user;

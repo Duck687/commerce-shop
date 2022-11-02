@@ -1,9 +1,9 @@
-package Controllers_Crud;
+package controllers_Crud;
 
 import java.util.List;
 
-import Repos.userRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import repos.userRepository;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,15 +11,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import Models.user;
-import Service.Service;
+import models.user;
+import service.userService;
 
 
 @RestController
 public class userControllerRest {
-    Service<userRepository, user> userService = new Service<userRepository, user>();
+    @Autowired
+    userService userService;
     @GetMapping("/user")
-    private List<user> getAlluser()
+    public List<user> getAlluser()
     {
         return userService.getAll();
     }
