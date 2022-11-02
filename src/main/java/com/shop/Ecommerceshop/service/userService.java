@@ -1,10 +1,9 @@
-package service;
+package com.shop.Ecommerceshop.service;
 
-import models.user;
+import com.shop.Ecommerceshop.models.user;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
-import repos.userRepository;
+import com.shop.Ecommerceshop.repos.userRepository;
 
 import java.util.ArrayList;
 import java.util.List;

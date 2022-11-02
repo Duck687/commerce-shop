@@ -1,6 +1,6 @@
-package repos;
+package com.shop.Ecommerceshop.repos;
 
-import models.product;
+import com.shop.Ecommerceshop.models.product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface prodRepository extends JpaRepository<product, Integer> {

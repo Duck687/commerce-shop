@@ -1,4 +1,4 @@
-package models;
+package com.shop.Ecommerceshop.models;
 import javax.persistence.*;
 
 @Entity

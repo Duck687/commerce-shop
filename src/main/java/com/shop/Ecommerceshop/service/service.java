@@ -1,4 +1,4 @@
-package service;
+package com.shop.Ecommerceshop.service;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 @org.springframework.stereotype.Service
 @Transactional
 public class service<X extends JpaRepository,Y> {
-    @Autowired
+
     private X repo;
 
     public List<Y> getAll() {

@@ -1,6 +1,6 @@
-package repos;
+package com.shop.Ecommerceshop.repos;
 
-import models.user;
+import com.shop.Ecommerceshop.models.user;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

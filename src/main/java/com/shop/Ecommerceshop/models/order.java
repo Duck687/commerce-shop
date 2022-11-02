@@ -1,31 +1,31 @@
-package models;
+package com.shop.Ecommerceshop.models;
 import javax.persistence.*;
 
 @Entity
 @Table
-public class basket {
-    private Integer id_basket;
+public class order {
+    private Integer id_order;
     private Integer id_user;
     private Integer id_product;
     private Integer count_product;
 
-    public basket() {
+    public order() {
     }
 
-    public basket(Integer id_basket, Integer id_user, Integer id_product, Integer count_product) {
-        this.id_basket = id_basket;
+    public order(Integer id_order, Integer id_user, Integer id_product, Integer count_product) {
+        this.id_order = id_order;
         this.id_user = id_user;
         this.id_product = id_product;
         this.count_product = count_product;
     }
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer getId_basket() {
-        return id_basket;
+    public Integer getId_order() {
+        return id_order;
     }
 
-    public void setId_basket(Integer id_basket) {
-        this.id_basket = id_basket;
+    public void setId_order(Integer id_order) {
+        this.id_order = id_order;
     }
 
     public Integer getId_user() {
