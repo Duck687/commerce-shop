@@ -1,22 +1,13 @@
 package com.shop.Ecommerceshop.controllers_Crud;
 
-import java.util.List;
-
 import com.shop.Ecommerceshop.models.user;
-import com.shop.Ecommerceshop.repos.userRepository;
 import com.shop.Ecommerceshop.service.userService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 
-@RestController
-public class userControllerRest {
+public class responseControllerRest {
     @Autowired
     com.shop.Ecommerceshop.service.userService userService;
     @GetMapping("/user")
@@ -51,4 +42,3 @@ public class userControllerRest {
         return users;
     }
 }
-
